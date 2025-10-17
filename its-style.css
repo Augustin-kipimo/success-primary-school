@@ -100,7 +100,7 @@ header {
 .main {
     padding: 0;
     margin: 0;
-    background-image: url("../image/backgroundphot.avif");
+    background-image: url("backgroundphot.avif");
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
@@ -412,47 +412,53 @@ header {
         justify-content: space-between;
         align-items: center;
         height: auto;
-        padding: 10px 0;
+        padding: 5px 0;
         backdrop-filter: blur(5px);
         box-sizing: border-box;
         overflow: hidden;
         width: 100%;
-        height: auto;
         margin-bottom: 10px;
         border-bottom: 2px solid rgb(255, 172, 6);
 
     }
     .logo {
-        margin: 10px 0;
-        justify-content: center;
+        display: inline;
+        align-items: center;
+        margin-left: 20px;
+        margin: 0;
+        justify-content: space-between;
         text-align: center;
         box-sizing: border-box;
         overflow: hidden;
-        width: 100%;
+        width: 50%;
+        padding: 0;
+
         height: auto;
         margin-bottom: 10px;
     
     }
     .navbar {
         margin: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
         text-align: center;
         box-sizing: border-box;
         overflow: hidden;
-        width: 100%;
+        width: 90%;
         height: auto;
+        margin-top: 0;
         margin-bottom: 10px;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        padding: auto;
+        padding: 2px;
 
     }
     .navbar a {
         display: flex;
         margin: 5px;
         font-size: medium;
-        width: auto;
-        height: auto;
+        width: 80%;
         box-sizing: border-box;
         overflow: hidden;
         text-align: center;
@@ -467,7 +473,6 @@ header {
     .main {
         padding: 0;
         margin: 0;
-        background-image: url("../image/backgroundphot.avif");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -530,9 +535,14 @@ header {
 }
 @media (max-width: 768px) {
     header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        padding: 5px 0;
         flex-direction: column;
         height: auto;
-        padding: 10px 0;
+        padding: 5px;
 
     }
     .logo {
